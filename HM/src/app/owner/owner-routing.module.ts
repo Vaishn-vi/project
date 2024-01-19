@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OwnerlandingComponent } from './ownerlanding/ownerlanding.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path :'owner',component:OwnerlandingComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
