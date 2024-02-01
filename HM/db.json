@@ -1,21 +1,36 @@
 {
-    "posts":[
-        {
-            "id":1,
-            "title":"json-server",
-            "author":"typicode"
-        }
-
-    ],
-    "comments":[
-        {
-            "id":1,
-            "body":"some comment",
-            "postid":1
-        }
-
-    ],
-    "profile":{
-        "name":"typicode"
+  "user": [],
+  "admin": [
+    {
+      "id": "fae0",
+      "fullName": "vaishnavi",
+      "mob": null,
+      "gender": null,
+      "pan": null,
+      "password": "vaishu",
+      "confirmPass": "vaishu"
     }
+  ],
+  "owner": [
+    {
+      "id": "5083",
+      "fullName": "vaishnavi",
+      "mob": "78666666",
+      "gender": null,
+      "pan": "abc",
+      "password": "vaishu",
+      "confirmPass": "vaishu"
+    },
+    {
+      "id": "c2d5",
+      "fullName": "",
+      "mob": null,
+      "gender": null,
+      "pan": null,
+      "password": null,
+      "confirmPass": ""
+    }
+  ],
+  "hotelDetails": [],
+  "hotelBooking": []
 }

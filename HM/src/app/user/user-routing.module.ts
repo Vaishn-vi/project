@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserlandingComponent } from './userlanding/userlanding.component';
+import { UsersuccessComponent } from './usersuccess/usersuccess.component';
 
 const routes: Routes = [
-  {path : 'user' , component:UserlandingComponent}
+  {path : 'userlanding' , component:UserlandingComponent},
+  {path: 'usersuccess' , component:UsersuccessComponent}
 ];
 
 @NgModule({
