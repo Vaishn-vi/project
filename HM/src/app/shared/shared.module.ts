@@ -7,6 +7,7 @@ import {MatError, MatFormFieldModule, MatLabel} from '@angular/material/form-fie
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -22,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatRadioModule,
     HttpClientModule,
     MatIconModule,
+    MatCardModule
+    
     
   ],
   exports:[
@@ -32,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     MatIconModule,
     MatRadioModule,
+    MatCardModule
     
     
   ]

@@ -1,30 +1,29 @@
-<div >
-    <form [formGroup]="signInForm">
+<div class="back">
+    <form class="form" [formGroup]="signInForm">
 
-    <mat-form-field>
-        <mat-label>User Name</mat-label>
-        <input type="text" matInput formControlName="userName">
-        <mat-hint *ngIf="!signInForm.get('userName')?.touched">
-            Please enter your User Name
-        </mat-hint>
-        <mat-error *ngIf="signInForm.get('userName')?.errors?.['required']
+        <mat-form-field>
+            <mat-label>User Name</mat-label>
+            <input type="text" matInput formControlName="userName">
+            <mat-hint class="hint" *ngIf="!signInForm.get('userName')?.touched">
+                Please enter your User Name
+            </mat-hint>
+            <mat-error class="hint" *ngIf="signInForm.get('userName')?.errors?.['required']
          && signInForm.get('userName')?.touched">
-         User Name is Required
-        </mat-error>
-    </mat-form-field>
+                User Name is Required
+            </mat-error>
+        </mat-form-field>
 
-    <br>
-    <mat-form-field>
-        <mat-label>Password</mat-label>
-        <input type="text" matInput formControlName="password">
-    </mat-form-field>
-   <mat-error *ngIf="notValidUser">Invalid user name or password</mat-error>
+        <br>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input type="text" matInput formControlName="password">
+        </mat-form-field>
+        <mat-error  *ngIf="notValidUser">Invalid user name or password</mat-error>
 
-    <br>
-    <button mat-raised-button color="accent" (click)="submit()">Submit</button>
-    <br>
-    <a routerLink="/signup">Don't have acount click here</a>
+        <br>
+        <button mat-raised-button color="accent" (click)="submit()">Submit</button>
+        <br><br>
+        <a class="acc" routerLink="/signup">Don't have acount click here</a>
 
-</form>
+    </form>
 </div>
-

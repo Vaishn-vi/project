@@ -62,12 +62,12 @@ this.apicallService.postApiCall(this.endPoint, this.signUpForm.value).subscribe(
     this.data=respo;
     
   if(this.endPoint ==='admin'){
-     this.router.navigateByUrl('/admin/adminsuccess')
+     this.router.navigateByUrl('signin')
   }else if(this.endPoint === 'owner'){
-    this.router.navigateByUrl('/owner/ownersuccess')
+    this.router.navigateByUrl('signin')
   }
   else{
-    this.router.navigateByUrl('/user/usersuccess')
+    this.router.navigateByUrl('signin')
   }
 })
 

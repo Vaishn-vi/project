@@ -18,8 +18,8 @@ export class SigninComponent{
 
   }
  ngOnInit(){
- // this.journey = this.apicallService.journey; //user/owner/admin
- this.journey = 'owner';
+ this.journey = this.apicallService.journey; //user/owner/admin
+//  this.journey = 'owner';
  this.getData()
    this.formDetails()
  }

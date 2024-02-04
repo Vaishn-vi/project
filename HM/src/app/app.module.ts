@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -18,7 +19,8 @@ import { HttpClientModule} from '@angular/common/http';
     AppComponent,
     LandingComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

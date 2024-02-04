@@ -1,14 +1,24 @@
 {
-  "user": [],
+  "user": [
+    {
+      "id": "7fbc",
+      "fullName": "prisha",
+      "mob": "8776775",
+      "gender": null,
+      "pan": "Abc",
+      "password": "prisha",
+      "confirmPass": "prisha"
+    }
+  ],
   "admin": [
     {
-      "id": "fae0",
-      "fullName": "vaishnavi",
-      "mob": null,
+      "id": "c58a",
+      "fullName": "vaibhav",
+      "mob": "8787483",
       "gender": null,
-      "pan": null,
-      "password": "vaishu",
-      "confirmPass": "vaishu"
+      "pan": "abc",
+      "password": "vaibhav",
+      "confirmPass": "vaibhav"
     }
   ],
   "owner": [
@@ -20,17 +30,132 @@
       "pan": "abc",
       "password": "vaishu",
       "confirmPass": "vaishu"
-    },
-    {
-      "id": "c2d5",
-      "fullName": "",
-      "mob": null,
-      "gender": null,
-      "pan": null,
-      "password": null,
-      "confirmPass": ""
     }
   ],
-  "hotelDetails": [],
+  "hotelDetails": [
+    {
+      "id": "2451",
+      "ownerName": "vaishnavi",
+      "mob": "8786767",
+      "hotelName": "celebration",
+      "Ac": null,
+      "NonAc": null,
+      "Ac_NonAc": null,
+      "Veg": null,
+      "NonVeg": null,
+      "Veg_NonVeg": null,
+      "hotelcontact": "87656544",
+      "password": "vaishu"
+    },
+    {
+      "id": "de46",
+      "ownerName": "vaishnavi",
+      "mob": "8776756",
+      "hotelName": "graphes",
+      "Ac": null,
+      "NonAc": null,
+      "Ac_NonAc": true,
+      "Veg": null,
+      "NonVeg": null,
+      "Veg_NonVeg": true,
+      "hotelcontact": "43232323",
+      "password": "vaishu"
+    },
+    {
+      "id": "7110",
+      "ownerName": "vaishnavi",
+      "mob": "877654534",
+      "hotelName": "krishna",
+      "Ac": null,
+      "NonAc": null,
+      "Ac_NonAc": true,
+      "Veg": null,
+      "NonVeg": null,
+      "Veg_NonVeg": true,
+      "hotelcontact": "75644332",
+      "password": "vaishu"
+    },
+    {
+      "id": "2623",
+      "ownerName": "vaishnavi",
+      "mob": "75444334",
+      "hotelName": "celebration",
+      "Ac": null,
+      "NonAc": null,
+      "Ac_NonAc": true,
+      "Veg": null,
+      "NonVeg": true,
+      "Veg_NonVeg": null,
+      "hotelcontact": "43223434",
+      "password": "vaishu"
+    },
+    {
+      "id": "d8f0",
+      "ownerName": "vaishnavi",
+      "mob": "76564554",
+      "hotelName": "shivshahi",
+      "Ac": null,
+      "NonAc": null,
+      "Ac_NonAc": true,
+      "Veg": true,
+      "NonVeg": null,
+      "Veg_NonVeg": null,
+      "hotelcontact": "987767656",
+      "password": "vaishu"
+    },
+    {
+      "id": "1744",
+      "ownerName": "aishnavi",
+      "mob": "6435435",
+      "hotelName": "graphes",
+      "Ac": null,
+      "NonAc": null,
+      "Ac_NonAc": true,
+      "Veg": null,
+      "NonVeg": null,
+      "Veg_NonVeg": true,
+      "hotelcontact": "756473",
+      "password": "vaishu"
+    },
+    {
+      "id": "e72b",
+      "ownerName": "vaishnavi",
+      "mob": "78738243",
+      "hotelName": "Celebration",
+      "Ac": true,
+      "NonAc": true,
+      "Veg": true,
+      "NonVeg": true,
+      "hotelcontact": "57435458743564378",
+      "password": "vaishu",
+      "imgName": ""
+    },
+    {
+      "id": "9525",
+      "ownerName": "vaishnavi",
+      "mob": "8574874",
+      "hotelName": "Shivshahi",
+      "Ac": true,
+      "NonAc": "",
+      "Veg": true,
+      "NonVeg": "",
+      "hotelcontact": "487584364",
+      "password": "Vaishu",
+      "imgName": ""
+    },
+    {
+      "id": "371c",
+      "ownerName": "vaishnavi",
+      "mob": "38473543",
+      "hotelName": "Prasad",
+      "Ac": true,
+      "NonAc": true,
+      "Veg": true,
+      "NonVeg": true,
+      "hotelcontact": "743563487568347",
+      "password": "vaishu",
+      "file": ""
+    }
+  ],
   "hotelBooking": []
 }

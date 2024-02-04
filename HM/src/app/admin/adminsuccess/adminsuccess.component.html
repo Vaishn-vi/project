@@ -1,0 +1,25 @@
+
+<button mat-raised-button color="accent"  (click)="viewhotels()">Hotel Details</button>
+
+<div *ngIf="showdata">
+   <table>
+    <tr>
+        <th *ngFor="let head of Headings">{{head}}</th>
+    </tr>
+    <tr *ngFor="let data of data">
+        <td> {{data.ownerName}}</td>
+            <td> {{data.mob}}</td>
+            <td> {{data.hotelName}}</td>
+            <td> {{data.Ac}}</td>
+            <td> {{data.NonAc}}</td>
+            <td> {{data.Ac_NonAc}}</td>
+            <td> {{data.Veg}}</td>
+            <td> {{data.NonVeg}}</td>
+            <td> {{data.Veg_NonVeg}}</td>
+            <td> {{data.hotelcontact}}</td>
+            <td><mat-icon (click)="delete(data.id)">delete</mat-icon></td>
+
+    </tr>
+   </table> 
+
+</div>

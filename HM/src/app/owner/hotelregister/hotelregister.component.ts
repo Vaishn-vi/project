@@ -9,51 +9,54 @@ import { ApicallService } from 'src/app/shared/apicall.service';
   styleUrls: ['./hotelregister.component.scss']
 })
 export class HotelregisterComponent {
-  hotelregister! : FormGroup;
-  name1!: string;
-  isMatch :boolean = false;
-  showPassword=false;
-  journey :any;
-  data: any;
 
-  constructor( private formBuilder: FormBuilder,
-     public apicallService:ApicallService,private router:Router){}
+ 
+  hotelregister!:FormGroup;
+  showPassword: boolean=false;
+  hotelEndPoint = 'hotelDetails';
+  dataById :any;
+  constructor(private formBuilder: FormBuilder , private apicallService: ApicallService,
+    private router: Router){}
 
   ngOnInit(){
-   this.journey =  this.apicallService.journey;
-   this.formDetails();
+    this.dataById = this.apicallService.dataById
+    this.hotelDetailsForm()
   }
 
-  formDetails(){
+  hotelDetailsForm(){
     this.hotelregister = this.formBuilder.group({
-      ownerName:['',[Validators.required]],
-      mob:[null,[Validators.maxLength(10),Validators.pattern("^[0-9]*$")]],
-      hotelName:['',[Validators.required]],
-      hotelcontact:[null,[Validators.maxLength(10),Validators.pattern("^[0-9]*$")]],
-      password:[],
-     
+      ownerName:[ this.dataById? this.dataById?.ownerName:''],
+      mob:[ this.dataById? this.dataById?.mob:''],
+      hotelName:[this.dataById? this.dataById?.hotelName:''],
+      Ac:[ this.dataById ?  this.dataById?.Ac : '' ],
+      NonAc:[ this.dataById ?  this.dataById?.NonAc : ''],
+      Veg:[ this.dataById ?  this.dataById?.Veg: ''],
+      NonVeg:[ this.dataById ?  this.dataById?.NonVeg : '' ],
+      hotelcontact:[ this.dataById ? this.dataById?.hotelcontact:''],
+      password:[ this.dataById ?  this.dataById?.password : ''],
+      file:[ this.dataById ?  this.dataById?.file : '']
     })
+  }
+
+  submit(){
+    this.apicallService.postApiCall(this.hotelEndPoint,this.hotelregister.value).subscribe(respo=>{
+       this.router.navigateByUrl('/owner/ownersuccess')
+    }) 
 
   }
-showPass(){
-  this.showPassword =  !this.showPassword;
+  async update(){
+  let respo =  await this.apicallService.updateData('hotelDetails',this.dataById?.id,this.hotelregister.value).toPromise()
+  this.router.navigateByUrl('/owner/ownersuccess');
 }
-
-
-submit(){
-this.apicallService.postApiCall(this.journey, this.hotelregister.value).subscribe(respo=>{
-    this.data=respo;
-    if(this.journey =='admin'){
-      this.router.navigateByUrl('/owner/ownersuccess')
-     }
-    
-})
-
-
+  showPass(){
+    this.showPassword =  !this.showPassword;
   }
+  openInput(){ 
+    document?.getElementById("fileInput")?.click();
 }
-
-
-
-
+fileChange(file:any){
+   let imgName = "assets/Images/"+ file.target.value.slice(12)
+   this.hotelregister.patchValue({imageField:imgName})
+}
+}
 
