@@ -34,7 +34,7 @@ export class HotelregisterComponent {
       NonVeg:[ this.dataById ?  this.dataById?.NonVeg : '' ],
       hotelcontact:[ this.dataById ? this.dataById?.hotelcontact:''],
       password:[ this.dataById ?  this.dataById?.password : ''],
-      file:[ this.dataById ?  this.dataById?.file : '']
+      imageField:[]
     })
   }
 
