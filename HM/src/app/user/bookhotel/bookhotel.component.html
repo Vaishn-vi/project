@@ -1,0 +1,75 @@
+<div class="back">
+    <div class="form">
+        <form [formGroup]="bookhotel">
+
+            <mat-form-field class="form-fields">
+                <mat-label> Name</mat-label>
+                <input type="text" matInput formControlName="Name">
+
+                <mat-hint class="hint" *ngIf="!bookhotel.get('Name')?.touched"> Please enter your name
+                    here</mat-hint>
+                <mat-error *ngIf="bookhotel.get('Name')?.errors?.['required'] && bookhotel.get('Name')?.touched">Full
+                    Name is required</mat-error>
+
+            </mat-form-field>
+            <br><br>
+            <mat-form-field class="form-fields">
+                <mat-label>Mob No</mat-label>
+                <input type="text" matInput formControlName="mob">
+                <br>
+                <mat-hint class="hint">Please enter mob no </mat-hint>
+                <mat-error *ngIf="bookhotel.get('mob')?.errors?.['maxlength'] && bookhotel.get('mob')?.touched">
+                    mob no should not more than 10 digits
+                </mat-error>
+                <mat-error *ngIf="bookhotel.get('mob')?.errors?.['pattern'] 
+                && bookhotel.get('mob')?.touched
+                && !bookhotel.get('mob')?.errors?.['maxlength'] ">
+                    Invalid pattern
+                </mat-error>
+            </mat-form-field>
+            <br>
+            <br>
+
+            <mat-form-field class="form-fields">
+                <mat-label>number of Rooms</mat-label>
+                <input type="number" matInput formControlName="noOfRooms" min="1">
+                <mat-error
+                    *ngIf="bookhotel.get('noOfRooms')?.errors?.['required'] && bookhotel.get('noOfRooms')?.touched">Number
+                    of rooms is required</mat-error>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="form-fields">
+                <mat-label>Select date </mat-label>
+                <input type="date" matInput formControlName="date">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field class="form-fields">
+
+                <mat-label>How many Days</mat-label>
+                <input type="number" matInput formControlName="days" min="1">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field>
+                <mat-label>Select Payment Method</mat-label>
+                <select matNativeControl required>
+                    <option value="UPI">UPI</option>
+                    <option value="Net Banking">Net Banking</option>
+                    <option value="Any Other Method">Any Other Method</option>
+                </select>
+            </mat-form-field>
+
+
+            <br><br>
+            <button mat-raised-button (click)="openInput()">Upload Payment Receipt</button>
+            <input id="fileInput" hidden type="file" (change)="fileChange($event)" name="file">
+            <br><br>
+
+            <button mat-raised-button color="accent" class="btn" (click)="submit()" *ngIf="!dataById">Submit</button>
+            <button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="dataById">Update</button>
+
+        </form>
+    </div>
+</div>

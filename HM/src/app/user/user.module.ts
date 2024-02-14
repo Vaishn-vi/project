@@ -5,12 +5,14 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserlandingComponent } from './userlanding/userlanding.component';
 import { SharedModule } from '../shared/shared.module';
 import { UsersuccessComponent } from './usersuccess/usersuccess.component';
+import { BookhotelComponent } from './bookhotel/bookhotel.component';
 
 
 @NgModule({
   declarations: [
     UserlandingComponent,
-    UsersuccessComponent
+    UsersuccessComponent,
+    BookhotelComponent
   ],
   imports: [
     CommonModule,

@@ -1,27 +1,18 @@
+<div >
+<mat-card class="example-card"  *ngFor="let data of hotelData">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title class="header">{{data.hotelName}}</mat-card-title><br><br>
+        <mat-card-title class="header"> Hotel Contact :{{data.hotelcontact}}</mat-card-title><br><br>
+        <mat-card-title class="header">Owner Name :{{data.ownerName}}  </mat-card-title><br><br>
+        <mat-card-title class="header"> Hotel Address: {{data.address}} </mat-card-title><br><br>
+        <mat-card-title class="header">Rooms Available :{{data.rooms}}</mat-card-title><br><br>
+        <img  class="img"mat-card-md-image [src] = "data.imageField">
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content class="header">
+        <button (click)="bookNow()"> Booknow</button>
+    </mat-card-content>
+  </mat-card>
+  </div>
 
-
-<button mat-raised-button color="accent"  (click)="viewhotels()">Hotel Details</button>
-
-<div *ngIf="showdata">
-   <table>
-    <tr>
-        <th *ngFor="let head of Headings">{{head}}</th>
-    </tr>
-    <tr *ngFor="let data of data">
-        <td> {{data.ownerName}}</td>
-            <td> {{data.mob}}</td>
-            <td> {{data.hotelName}}</td>
-            <td> {{data.Ac}}</td>
-            <td> {{data.NonAc}}</td>
-            <td> {{data.Ac_NonAc}}</td>
-            <td> {{data.Veg}}</td>
-            <td> {{data.NonVeg}}</td>
-            <td> {{data.Veg_NonVeg}}</td>
-            <td> {{data.hotelcontact}}</td>
-            <td><button (click)="bookNow()">Book Now</button></td>
-         
-
-    </tr>
-   </table> 
-
-</div>

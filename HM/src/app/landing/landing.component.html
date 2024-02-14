@@ -1,5 +1,33 @@
-<div>
-  <button mat-raised-button color="accent" routerLink="/admin/adminlanding" (click)="journey('admin')">Admin</button>
-  <button mat-raised-button color="accent" routerLink="/owner/ownerlanding" (click)="journey('owner')">Owner</button>
-  <button mat-raised-button color="accent" routerLink="/user/userlanding" (click)="journey('user')">User</button>
+<div class="back">
+  <div class="main">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><b>Admin Journey</b></h5>
+            <p class="card-text">The administrator acts as a bridge between the technical aspects of the system and the practical needs of hotel staff and management.</p>
+            <button class="buttons" mat-raised-button color="accent" routerLink="/admin/adminlanding" (click)="journey('admin')">Admin</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><b>Owner Journey</b></h5>
+            <p class="card-text">Your leadership ensures that the hotel maintains high standards of service, creating an environment where guests feel delighted by their stay.</p>
+            <button class="buttons" mat-raised-button color="accent" routerLink="/owner/ownerlanding" (click)="journey('owner')">Owner</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><b>User Journey</b></h5>
+            <p class="card-text"> Hotel Management System is a comprehensive and user-friendly solution designed to streamline and enhance the operations of your hotel.</p>
+           <button class="buttons" mat-raised-button color="accent" routerLink="/user/userlanding" (click)="journey('user')">User</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 </div>

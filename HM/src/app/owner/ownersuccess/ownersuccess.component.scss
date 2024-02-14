@@ -1,18 +1,40 @@
-td,tr,th{
-    padding: 5px;
-    border: 2px solid rgb(2, 21, 61);
-    border-collapse:collapse;
+// .back{
+//     height: 600px;
+//     width: 1400px;
+//     margin: auto;
+//     background-image: url('https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg?size=1400&ext=jpg&ga=GA1.1.1826414947.1698969600&semt=ais');
+//     background-repeat:no-repeat;
+// }
+.main{
+    height:100px;
+    margin: auto;
+    width: 600px;
     text-align: center;
-    color:rgb(209, 23, 70);
-    font-weight: 300px;
-    font-size: 20px;
-    
+    position: relative;
+    padding-top: 25px;
+    // border: 3px solid rgb(14, 14, 13);
+    // background-color: antiquewhite;
+    opacity: 0.7;
+}
+.btn{
+    margin:30px;
 
 }
-.example-card {
-    max-width: 700px;
-    margin-bottom: 8px;
-    margin: auto;
-   
 
+.img{
+    height:250px;
+    width:370px;
+}
+.header{
+    margin-left: 50px;
+}
+.example-card{
+    margin-right: 250px;
+    margin-left: 250px;
+    width:800px;
+    margin-top: 20px;
+    background-color: rgb(248, 240, 246);
+}
+.icon{
+    margin-left: 20px;
 }

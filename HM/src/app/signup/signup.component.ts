@@ -32,9 +32,9 @@ export class SignupComponent {
   formDetails(){
     this.signUpForm = this.formBuilder.group({
       fullName:['',[Validators.required]],
-      mob:[null,[Validators.maxLength(10),Validators.pattern("^[0-9]*$")]],
+      mob:[null,[Validators.maxLength(10),Validators.minLength(10),Validators.pattern("^[0-9]*$")]],
       gender:[],
-      pan:[],
+      pan:[null,[ Validators.pattern("^[A-Z]{5}[0-9]{4}[A-Z]$")]],
       password:[],
       confirmPass:['']
     })

@@ -14,11 +14,14 @@
         </mat-form-field>
 
         <br>
-        <mat-form-field>
+        <mat-form-field class="form-fields">
             <mat-label>Password</mat-label>
-            <input type="text" matInput formControlName="password">
+            <input [type]="showPassword ? 'text' : 'password'" matInput formControlName="password">
+            <mat-icon matSuffix *ngIf="showPassword" (click)="showPass()">visibility</mat-icon>
+            <mat-icon matSuffix *ngIf="!showPassword" (click)="showPass()"> visibility_off</mat-icon>
+            <mat-error *ngIf="notValidUser">Invalid user name or password</mat-error>
         </mat-form-field>
-        <mat-error  *ngIf="notValidUser">Invalid user name or password</mat-error>
+       
 
         <br>
         <button mat-raised-button color="accent" (click)="submit()">Submit</button>

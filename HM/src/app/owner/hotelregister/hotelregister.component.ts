@@ -25,14 +25,12 @@ export class HotelregisterComponent {
 
   hotelDetailsForm(){
     this.hotelregister = this.formBuilder.group({
-      ownerName:[ this.dataById? this.dataById?.ownerName:''],
-      mob:[ this.dataById? this.dataById?.mob:''],
-      hotelName:[this.dataById? this.dataById?.hotelName:''],
-      Ac:[ this.dataById ?  this.dataById?.Ac : '' ],
-      NonAc:[ this.dataById ?  this.dataById?.NonAc : ''],
-      Veg:[ this.dataById ?  this.dataById?.Veg: ''],
-      NonVeg:[ this.dataById ?  this.dataById?.NonVeg : '' ],
-      hotelcontact:[ this.dataById ? this.dataById?.hotelcontact:''],
+      ownerName:[ '',[Validators.required],this.dataById? this.dataById?.ownerName:''],
+      mob:['',[Validators.maxLength(10),Validators.minLength(10),Validators.pattern("^[0-9]*$")], this.dataById? this.dataById?.mob:''],
+      hotelName:['',[Validators.required],this.dataById? this.dataById?.hotelName:''],
+      address:['',[Validators.required],this.dataById? this.dataById?.address:''],
+      rooms:[this.dataById? this.dataById?.rooms:''],
+      hotelcontact:['',[Validators.maxLength(10),Validators.minLength(10),Validators.pattern("^[0-9]*$")], this.dataById ? this.dataById?.hotelcontact:''],
       password:[ this.dataById ?  this.dataById?.password : ''],
       imageField:[]
     })

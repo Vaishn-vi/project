@@ -9,8 +9,7 @@ import { ApicallService } from 'src/app/shared/apicall.service';
   styleUrls: ['./ownersuccess.component.scss']
 })
 export class OwnersuccessComponent {
-  Headings=["OwnerName","Mobile", "HotelName","Ac", "NonAc","Ac_NonAc","Veg", "NonVeg","Veg_NonVeg", "hotelcontact","Edit","Delete"]
-  hotelData:any;
+   hotelData:any;
   userName:any;
   hotelsByOwner:any
   showData: boolean = false; 

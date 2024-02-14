@@ -1,25 +1,26 @@
+<div class="back">
+    <div class="main">
+        <div>
+            <mat-card class="example-card" *ngFor="let data of hotelData">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title class="header">{{data.hotelName}}</mat-card-title><br><br>
 
-<button mat-raised-button color="accent"  (click)="viewhotels()">Hotel Details</button>
+                        <mat-card-title class="header"> Hotel Contact :{{data.hotelcontact}}</mat-card-title><br><br>
+                        <mat-card-title class="header">Owner Name :{{data.ownerName}} </mat-card-title><br><br>
+                        <mat-card-title class="header"> Hotel Address: {{data.address}} </mat-card-title><br><br>
+                        <mat-card-title class="header">Rooms Available :{{data.rooms}}</mat-card-title><br><br>
+                        <img class="img" mat-card-md-image [src]="data.imageField">
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content class="header">
 
-<div *ngIf="showdata">
-   <table>
-    <tr>
-        <th *ngFor="let head of Headings">{{head}}</th>
-    </tr>
-    <tr *ngFor="let data of data">
-        <td> {{data.ownerName}}</td>
-            <td> {{data.mob}}</td>
-            <td> {{data.hotelName}}</td>
-            <td> {{data.Ac}}</td>
-            <td> {{data.NonAc}}</td>
-            <td> {{data.Ac_NonAc}}</td>
-            <td> {{data.Veg}}</td>
-            <td> {{data.NonVeg}}</td>
-            <td> {{data.Veg_NonVeg}}</td>
-            <td> {{data.hotelcontact}}</td>
-            <td><mat-icon (click)="delete(data.id)">delete</mat-icon></td>
+                    <button (click)="delete(data.id)" class="icon" class="icon"><b>Delete</b><mat-icon>delete</mat-icon>
+                    </button>
 
-    </tr>
-   </table> 
+                </mat-card-content>
 
+            </mat-card>
+        </div>
+    </div>
 </div>

@@ -12,6 +12,7 @@ export class SigninComponent{
   journey :any;
   data:any;
   validUser:any;
+  showPassword=false;
   notValidUser: boolean =false;
   constructor(private formBuilder:FormBuilder, 
    private apicallService: ApicallService, private router: Router){
@@ -23,6 +24,9 @@ export class SigninComponent{
  this.getData()
    this.formDetails()
  }
+ showPass(){
+  this.showPassword =  !this.showPassword;
+}
 
    formDetails(){
      this.signInForm = this.formBuilder.group({
@@ -55,7 +59,6 @@ export class SigninComponent{
       this.notValidUser = true;
      }
    }
-
    getData(){  //get api call u/a/o
      this.apicallService.getApiCall(this.journey).subscribe(respo=>{
        this.data = respo;

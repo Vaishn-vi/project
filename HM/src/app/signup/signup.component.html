@@ -44,6 +44,7 @@
                 <mat-label>Pan card</mat-label>
                 <input type="text" matInput formControlName="pan">
                 <mat-hint class="hint">Enter your Pan</mat-hint>
+                <mat-error *ngIf="signUpForm.get('pan')?.errors?.['pattern']  && signUpForm.get('pan')?.touched"> Invalid Pan </mat-error>
             </mat-form-field>
 
             <br>

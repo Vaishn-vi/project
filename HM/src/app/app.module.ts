@@ -11,6 +11,7 @@ import { SigninComponent } from './signin/signin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
+import { HotellistComponent } from './hotellist/hotellist.component';
 
 
 
@@ -20,7 +21,8 @@ import { AboutComponent } from './about/about.component';
     LandingComponent,
     SignupComponent,
     SigninComponent,
-    AboutComponent
+    AboutComponent,
+    HotellistComponent
   ],
   imports: [
     BrowserModule,

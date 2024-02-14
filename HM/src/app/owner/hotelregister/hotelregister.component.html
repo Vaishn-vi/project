@@ -1,25 +1,25 @@
-
 <div class="back">
     <div class="form">
         <form [formGroup]="hotelregister">
-    
+
             <mat-form-field class="form-fields">
                 <mat-label>Owner Name</mat-label>
                 <input type="text" matInput formControlName="ownerName">
-    
-                <mat-hint class="hint" *ngIf="!hotelregister.get('ownerName')?.touched"> Please enter your name here</mat-hint>
-                <mat-error *ngIf="hotelregister.get('ownerName')?.errors?.['required'] && hotelregister.get('ownerName')?.touched"  >Full Name is required</mat-error>
-        
+
+                <mat-hint class="hint" *ngIf="!hotelregister.get('ownerName')?.touched"> Please enter name
+                    here</mat-hint>
+                <mat-error
+                    *ngIf="hotelregister.get('ownerName')?.errors?.['required'] && hotelregister.get('ownerName')?.touched">Full
+                    Name is required</mat-error>
+
             </mat-form-field>
-           
-            <br>
+            <br><br>
             <mat-form-field class="form-fields">
                 <mat-label>Mob No</mat-label>
                 <input type="text" matInput formControlName="mob">
                 <br>
-    
                 <mat-hint class="hint">Please enter mob no </mat-hint>
-                <mat-error *ngIf="hotelregister.get('mob')?.errors?.['maxlength'] && hotelregister.get('mob')?.touched"> 
+                <mat-error *ngIf="hotelregister.get('mob')?.errors?.['maxlength'] && hotelregister.get('mob')?.touched">
                     mob no should not more than 10 digits
                 </mat-error>
                 <mat-error *ngIf="hotelregister.get('mob')?.errors?.['pattern'] 
@@ -34,39 +34,46 @@
             <mat-form-field class="form-fields">
                 <mat-label>Hotel Name</mat-label>
                 <input type="text" matInput formControlName="hotelName">
-    
-                <mat-hint class="hint" *ngIf="!hotelregister.get('hotelName')?.touched"> Please enter your name here</mat-hint>
-                <mat-error *ngIf="hotelregister.get('hotelName')?.errors?.['required'] && hotelregister.get('hotelName')?.touched"  >Full Name is required</mat-error>
-        
+
+                <mat-hint class="hint" *ngIf="!hotelregister.get('hotelName')?.touched">Please Enter hotel Name
+                </mat-hint>
+                <mat-error
+                    *ngIf="hotelregister.get('hotelName')?.errors?.['required'] && hotelregister.get('hotelName')?.touched">Full
+                    Name is required</mat-error>
+
             </mat-form-field>
             <br><br>
 
             <div class="hint">
-                <label> Select Avalaible Room Type </label><br>
-                <input class="form-check-input" type="checkbox"  formControlName="Ac">
-                <label class="form-check-label">Ac </label>
-                <input class="form-check-input" type="checkbox"  formControlName="NonAc">
-                <label class="form-check-label"> Non-Ac </label><br>
-        
-              </div>
-              <br><br>
+                <mat-form-field class="form-fields">
+                    <mat-label>Hotel Address</mat-label>
+                    <input type="text" matInput formControlName="address">
 
-              <div class="hint">
-                <label> Select Hotel Menu </label><br>
-                <input class="form-check-input" type="checkbox"  formControlName="Veg" >
-                <label class="form-check-label">Veg </label>
-                <input class="form-check-input" type="checkbox"  formControlName="NonVeg" >
-                <label class="form-check-label"> Non-Veg </label><br>
-                
-              </div>
+                    <mat-hint class="hint" *ngIf="!hotelregister.get('address')?.touched">Please Enter
+                        Address</mat-hint>
+                    <mat-error
+                        *ngIf="hotelregister.get('address')?.errors?.['required'] && hotelregister.get('address')?.touched">Address
+                        is
+                        required</mat-error>
 
+                </mat-form-field>
+            </div>
+            <br>
+            <mat-form-field class="form-fields">
+                <mat-label>No.of Rooms Available</mat-label>
+                <input type="number" matInput formControlName="rooms" min="10">
+                <mat-error
+                    *ngIf="hotelregister.get('noOfRooms')?.errors?.['required'] && hotelregister.get('rooms')?.touched">Number
+                    of rooms is required</mat-error>
+            </mat-form-field>
+            <br>
             <mat-form-field class="form-fields">
                 <mat-label> Hotel Contact</mat-label>
                 <input type="text" matInput formControlName="hotelcontact">
                 <br>
-    
-                <mat-hint class="hint">Please enter hotelcontact no </mat-hint>
-                <mat-error *ngIf="hotelregister.get('hotelcontact')?.errors?.['maxlength'] && hotelregister.get('hotelcontact')?.touched"> 
+                <mat-hint class="hint"> Please Enter hotel Contact </mat-hint>
+                <mat-error
+                    *ngIf="hotelregister.get('hotelcontact')?.errors?.['maxlength'] && hotelregister.get('hotelcontact')?.touched">
                     Hotel Contact should not more than 10 digits
                 </mat-error>
                 <mat-error *ngIf="hotelregister.get('hotelcontact')?.errors?.['pattern'] 
@@ -78,20 +85,18 @@
             <br><br>
             <button mat-raised-button (click)="openInput()">Select File to Upload</button>
             <input id="fileInput" hidden type="file" (change)="fileChange($event)" name="file">
-              <br>
-         
+            <br><br>
             <mat-form-field class="form-fields">
                 <mat-label>Password</mat-label>
-                <input [type]="showPassword ? 'text' : 'password'" 
-                 matInput formControlName="password">
+                <input [type]="showPassword ? 'text' : 'password'" matInput formControlName="password">
                 <mat-icon matSuffix *ngIf="showPassword" (click)="showPass()">visibility</mat-icon>
-                <mat-icon matSuffix  *ngIf="!showPassword" (click)="showPass()"> visibility_off</mat-icon>
+                <mat-icon matSuffix *ngIf="!showPassword" (click)="showPass()"> visibility_off</mat-icon>
             </mat-form-field>
             <br><br>
-              
+
             <button mat-raised-button color="accent" class="btn" (click)="submit()" *ngIf="!dataById">Submit</button>
-            <button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="dataById" >Update</button>
-    
+            <button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="dataById">Update</button>
+
         </form>
     </div>
 </div>
