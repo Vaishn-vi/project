@@ -24,8 +24,8 @@ ngOnInit(){
 }
 
 async getHotelDetails(){
-  this.hotelData =   await this.apicallService.getApiCall('hotelDetails').toPromise()
-}
+    this.hotelData =   await this.apicallService.getApiCall('hotelDetails').toPromise()
+  }
 
 viewHotel(){
     this.hotelsByOwner = []
@@ -43,16 +43,14 @@ viewHotel(){
       console.log('this.hotelsByOwner',this.hotelsByOwner);
       
   }
- async edit(id:any){
+  async edit(id:any){
 
-  this.apicallService.dataById = await this.apicallService.getApiCall(this.journey, id).toPromise()
-  console.log('  this.apicallService.dataById)',  this.apicallService.dataById)
+    this.apicallService.dataById = await this.apicallService.getApiCall(this.journey, id).toPromise()
+    console.log('this.apicallService.dataById)',  this.apicallService.dataById)
+    
+    this.router.navigateByUrl('/owner/hotelregister')
   
-  this.router.navigateByUrl('/owner/hotelregister')
-  this. getHotelDetails();
-  this.viewHotel();
-
-  }
+    }
   reg(){
     this.apicallService.dataById = null;
   }

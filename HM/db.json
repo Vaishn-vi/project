@@ -34,28 +34,6 @@
   ],
   "hotelDetails": [
     {
-      "id": "e26b",
-      "ownerName": "Vaishnavi",
-      "mob": "787878787",
-      "hotelName": "Celebration",
-      "address": "Sangamner 422620",
-      "rooms": 40,
-      "hotelcontact": "354354646",
-      "password": "Vaishu",
-      "imageField": "assets/Images/hotel2.jpg"
-    },
-    {
-      "id": "1336",
-      "ownerName": "Vaishnavi",
-      "mob": "7822872585",
-      "hotelName": "Grapes",
-      "address": "Sangamner 422620",
-      "rooms": 40,
-      "hotelcontact": "8788888889",
-      "password": "vaishu",
-      "imageField": "assets/Images/hotel3.jpg"
-    },
-    {
       "id": "2f72",
       "ownerName": "Prishu",
       "mob": "8777777777",
@@ -67,28 +45,6 @@
       "imageField": "assets/Images/hotel7.jpg"
     },
     {
-      "id": "64da",
-      "ownerName": "Shanay",
-      "mob": "9893892839",
-      "hotelName": "Prasad",
-      "address": "Sangamner 422620",
-      "rooms": 20,
-      "hotelcontact": "3323232323",
-      "password": "Shanay",
-      "imageField": "assets/Images/hotel5.jpg"
-    },
-    {
-      "id": "de32",
-      "ownerName": "Swaraj",
-      "mob": "9887777777",
-      "hotelName": "Swaraj",
-      "address": "Pune ",
-      "rooms": 30,
-      "hotelcontact": "9878788878",
-      "password": "swaraj",
-      "imageField": "assets/Images/hotel10.jpg"
-    },
-    {
       "id": "d180",
       "ownerName": "Krutika",
       "mob": "9898989899",
@@ -98,6 +54,28 @@
       "hotelcontact": "8676766666",
       "password": "krutika",
       "imageField": "assets/Images/hotel6.jpg"
+    },
+    {
+      "id": "7cfe",
+      "ownerName": "Vaishnavi",
+      "mob": "7777779999",
+      "hotelName": "Celebration",
+      "address": "Sangamner ",
+      "rooms": 35,
+      "hotelcontact": "7888888888",
+      "password": "vaishu",
+      "imageField": "assets/Images/hotel11.jpg"
+    },
+    {
+      "id": "6bc2",
+      "ownerName": "Vaishnavi",
+      "mob": "8888888889",
+      "hotelName": "Celebration",
+      "address": "Sangamner ",
+      "rooms": 49,
+      "hotelcontact": "7776565647",
+      "password": "vaishu",
+      "imageField": "assets/Images/hotel12.jpg"
     }
   ],
   "hotelBooking": [

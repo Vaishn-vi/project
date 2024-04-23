@@ -31,7 +31,7 @@ export class SigninComponent{
    formDetails(){
      this.signInForm = this.formBuilder.group({
        userName:['',[Validators.required]],
-       password:[]
+       password:['',[Validators.required]]
      })
    }
 

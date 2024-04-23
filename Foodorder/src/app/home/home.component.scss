@@ -1,0 +1,62 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 2;
+}
+ul li {
+    height:19rem;
+    width:19rem;
+    margin: 0.5rem;
+    display:flex;
+    padding:.2px;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    border-radius: 1 rem;
+    color: red;
+}
+img{
+    height: 230px;
+    width: 310px;
+}
+.content{
+padding: .2rem 1rem;
+position: relative;
+}
+.favorite{
+    position: absolute;
+    top:.5rem;
+    right:1rem;
+    font-size: 1.2rem;
+   
+}
+.favorite.not{
+    color: black;
+}
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.origin{
+    flex:3
+}
+.origin span{
+    border-radius: 2rem;
+    background-color:whitesmoke;
+    color:gray;
+    font-size: .8rem;
+    margin-right:.3rem;
+    display:inline-block
+}
+.cook-time{
+    font-size: .8rem;
+    flex:3;
+    text-align: right;
+}
+.price{
+    color:gray;
+}

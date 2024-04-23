@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #container {
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+
+    #con {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #con {
+      z-index: 10;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #333;
+    }
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav input[type=text] {
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: 450px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+      padding-bottom: 15px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    #data {
+      height: 300px;
+      width: 550px;
+      background-color: #eeeaea;
+      margin-left: 400px;
+      margin-top: 90px;
+    }
+
+    #imgs {
+      margin: 20px 20px;
+      height: 250px;
+      width: 250px;
+      float: left;
+    }
+
+    h5 {
+      color: rgb(7, 7, 190);
+    }
+
+    .card-title{
+       margin-top: 10PX;
+    }
+   
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="topnav">
+      <a class="active">Popcorn Bits Cinemas</a>
+      <a href="#news">New Playlist</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <input type="text" placeholder="Search..">
+
+
+    </div>
+  </div>
+
+  <div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" onclick="moreinfo()">
+          <img src="https://img.freepik.com/premium-psd/sci-fi-movi-poster-design_841014-23207.jpg">
+        </a>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFFTLNC5U8kksIp2L3nou_-yiTmhpt7CCaNuMZBSrY2KnlK3YJGD0gRtvyzxxSW6N_Qc&usqp=CAU">
+        </a>
+
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8_avgc8fDsUkQ0Zdq63sjWmZ8BjyqB_mCH3UgyYlbKPzMlRt2UXdmg4FfYNSPZfm4B8&usqp=CAU">
+        </a>
+
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEyUTSGifcsklcH7Lz720unxGVpd5GfRUgLcMNV9nJ7KHSzRW_S0DFytQzFuXsBOi7Y4&usqp=CAU">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJ_6UTam94DanWJsQ5uRbqkV9XisvsoQ5kyucQgQg7xunXFoOc8yAAgu53n0MY_wXHmQ&usqp=CAU">
+        </a>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFFTLNC5U8kksIp2L3nou_-yiTmhpt7CCaNuMZBSrY2KnlK3YJGD0gRtvyzxxSW6N_Qc&usqp=CAU">
+        </a>
+
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8_avgc8fDsUkQ0Zdq63sjWmZ8BjyqB_mCH3UgyYlbKPzMlRt2UXdmg4FfYNSPZfm4B8&usqp=CAU">
+        </a>
+
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEyUTSGifcsklcH7Lz720unxGVpd5GfRUgLcMNV9nJ7KHSzRW_S0DFytQzFuXsBOi7Y4&usqp=CAU">
+        </a>
+
+      </div>
+    </div>
+    <div id="con">
+      <div id="data">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img id="imgs" src="https://img.freepik.com/premium-psd/sci-fi-movi-poster-design_841014-23190.jpg"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h2 class="card-title"> THE FATE OF THE FURIOUS</h2>
+                <h5>▶ Play trailer</h5>
+                <h4> Release date : 2017-04-12</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias dolor, distinctio ipsa nemo placeat dolores soluta .</p>
+                <p class="card-text"><small class="text-body-secondary"><h3>Rating :6.9/10</h3></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    function moreinfo() {
+      var x = document.getElementById('data');
+      if (x.style.display === "none") {
+        x.style.display = "block"
+      }
+      else
+        x.style.display = "none";
+    }
+    function enlargediv() {
+      var x = document.getElementById('data');
+      data.style.transform = "scale(1.5)";
+      data.style.transition = "transform 0.25s ease";
+    }
+  </script>
+</body>
+
+</html>
