@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { HotellistComponent } from './hotellist/hotellist.component';
+import { SearchPipe } from './search.pipe';
+
 
 
 
@@ -22,7 +24,9 @@ import { HotellistComponent } from './hotellist/hotellist.component';
     SignupComponent,
     SigninComponent,
     AboutComponent,
-    HotellistComponent
+    HotellistComponent,
+    SearchPipe,
+    
   ],
   imports: [
     BrowserModule,

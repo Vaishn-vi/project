@@ -13,6 +13,7 @@ userName:any;
 hotelsByOwner:any
 showData: boolean = false; 
 journey :any;
+Searchtext:any;
 constructor(private apicallService: ApicallService,private router: Router){
 }
 

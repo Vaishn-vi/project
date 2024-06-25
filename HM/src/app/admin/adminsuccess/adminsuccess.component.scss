@@ -1,26 +1,45 @@
-
-.btn{
-    margin:30px;
-
-}
-
-
 .img{
-    height:250px;
+    height:200px;
     width:370px;
+    margin-top: 10px;
+}
+.img:hover{
+    width:400px;
+    height:210px;
+    margin-top: 0px;
+}
+.img1{
+    height: 25px;
+    width:25px;
+    float: left;
 }
 .header{
     margin-left: 50px;
+    
+   
 }
 .example-card{
     margin-right: 200px;
     margin-left: 200px;
     width:900px;
+    height: 270px;
      margin-top: 20px;
     background-color: rgb(236, 234, 240);
     
 }
-.icon{
-    margin-left: 20px;
+
+.icn{
+    float:left;
+    font-size: 17px;
+    margin-top: 3px;
 }
+mat-card-content{
+    margin-left:50px ;
+}
+b{
+    margin-left: 4px;
+    font-size: 27px;
+}
+
+
 
