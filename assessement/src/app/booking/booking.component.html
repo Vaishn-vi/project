@@ -1,0 +1,83 @@
+<div class="back">
+    <div class="form">
+        <form [formGroup]="bookticket">
+
+            <mat-form-field class="form-fields">
+                <mat-label> Name</mat-label>
+                <input type="text" matInput formControlName="Name">
+
+                <mat-hint class="hint" *ngIf="!bookticket.get('Name')?.touched"> Please enter your name
+                    </mat-hint>
+                <mat-error *ngIf="bookticket.get('Name')?.errors?.['required'] && bookticket.get('Name')?.touched">Full
+                    Name is required</mat-error>
+
+            </mat-form-field>
+            <br><br>
+            <mat-form-field class="form-fields">
+                <mat-label>contact No</mat-label>
+                <input type="text" matInput formControlName="contact">
+                <br>
+                <mat-hint class="hint">Please enter mob no </mat-hint>
+                <mat-error *ngIf="bookticket.get('contact')?.errors?.['maxlength'] && bookticket.get('contact')?.touched">
+                    contact no should not more than 10 digits
+                </mat-error>
+                <mat-error *ngIf="bookticket.get('contact')?.errors?.['pattern'] 
+                && bookticket.get('contact')?.touched
+                && !bookticket.get('contact')?.errors?.['maxlength'] ">
+                    Invalid pattern
+                </mat-error>
+            </mat-form-field>
+            <br><br> <div class="hint">
+                <mat-form-field class="form-fields">
+                    <mat-label>Address</mat-label>
+                    <input type="text" matInput formControlName="address">
+
+                    <mat-hint class="hint" *ngIf="!bookticket.get('address')?.touched">Please Enter
+                        Address</mat-hint>
+                    <mat-error
+                        *ngIf="bookticket.get('address')?.errors?.['required'] && bookticket.get('address')?.touched">Address
+                        is
+                        required</mat-error>
+
+                </mat-form-field>
+      
+            <br>
+            <br>
+            <br>
+
+            <mat-form-field class="form-fields">
+                <mat-label>number of tickets</mat-label>
+                <input type="number" matInput formControlName="noOfTickets" min="1">
+                <mat-error
+                    *ngIf="bookticket.get('noOfRooms')?.errors?.['required'] && bookticket.get('noOfTickets')?.touched">Number
+                    of tickets is required</mat-error>
+            </mat-form-field>
+            <br><br>
+
+            <mat-form-field class="form-fields">
+                <mat-label>Select date and time</mat-label>
+                <input type="datetime-local" matInput formControlName="date">
+            </mat-form-field>
+            <br>
+
+            
+            <br>
+
+            <mat-form-field>
+                <mat-label>Select Payment Method</mat-label>
+                <select matNativeControl required>
+                    <option value="UPI">UPI</option>
+                    <option value="Net Banking">Net Banking</option>
+                    <option value="Any Other Method">Any Other Method</option>
+                </select>
+            </mat-form-field>
+
+
+            <br><br>
+
+            <button mat-raised-button color="accent" class="btn" (click)="submit()" *ngIf="!dataById">Submit</button>
+            <button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="dataById">Update</button>
+
+       
+    </div>
+

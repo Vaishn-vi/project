@@ -1,0 +1,28 @@
+
+ <div class="back">
+     <div class="main">
+         <div>
+            
+            <table>
+                <tr>
+                    <th *ngFor="let headings of tableHeading">{{headings}}</th>
+                </tr>
+                <tr *ngFor = "let data of userData">
+                    <td>{{data.Name}}</td>
+                    <td>{{data.contact}}</td>
+                    <td>{{data.noOfTickets}}</td>
+                    <td>{{data.address}}</td>
+                     <td><button (click)="delete(data.id)" class="icon"><b class="icn">Delete</b><mat-icon>delete</mat-icon>
+                     </button></td>
+                    </tr>
+                     </table>
+ 
+                 
+         </div>
+     </div>
+ </div>
+
+
+
+
+  

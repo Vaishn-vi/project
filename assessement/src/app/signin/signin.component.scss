@@ -1,0 +1,40 @@
+.form {
+    height: 400px;
+    //  background-color: rgb(200, 210, 231);
+    border: 3px solid rgb(14, 14, 13);
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding-top: 25px;
+    // opacity: 0.4;
+
+}
+
+.hint {
+    color: rgb(0, 0, 0);
+    font-weight: 600px;
+
+}
+
+
+.back {
+    height: 800px;
+    width: 1320px;
+    position: relative;
+    margin: auto;
+    background-image: url('../../assets/movie.jpeg');
+}
+
+.acc {
+    font-size: 20px;
+    color: rgb(247, 226, 45);
+
+}
+
+mat-form-field{
+    // margin-left: 60px;
+    width: 250px;
+    padding-top: 2px;
+}

@@ -1,0 +1,56 @@
+{
+  "user": [
+    {
+      "id": "7fbc",
+      "fullName": "vaishnavi",
+      "mob": "8776775",
+      "password": "vaishu",
+      "confirmPass": "vaishu"
+    },
+    {
+      "id": "91bb",
+      "fullName": "Vaibhav",
+      "mob": "5575757555",
+      "gender": null,
+      "pan": null,
+      "password": "Vaibhav",
+      "confirmPass": "Vaibhav"
+    }
+  ],
+  "admin": [
+    {
+      "id": "c58a",
+      "fullName": "vaishnavi",
+      "mob": "8787483",
+      "password": "vaishu",
+      "confirmPass": "vaishu"
+    }
+  ],
+  "userDetails": [
+    {
+      "id": "40c1",
+      "Name": "vaishnavi",
+      "contact": "8273872376",
+      "noOfTickets": 5,
+      "address": "sangamner",
+      "date": "2023-02-01T01:02"
+    },
+    {
+      "id": "550e",
+      "Name": "vaishnavi",
+      "contact": "8928439824",
+      "noOfTickets": 6,
+      "address": "pune",
+      "date": "2024-02-03T04:05"
+    }
+  ],
+  "booking": [
+    {
+      "id": "7e52",
+      "Name": "Vaishnavi",
+      "mob": "8767676",
+      "noOfTickets": 6,
+      "date": "2024-04-09"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.back{
+    height: 600px;
+    width: 1300px;
+    background-image: url(../../assets/movie.jpeg);
+    // background-size: 1300px;
+    background-repeat: no-repeat;
+    
+}
+.buttons{
+    margin:30px;
+    margin-top: 50px;
+   
+}
+.main{  
+    height:200px;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding-top: 25px;
+    border: 3px solid rgb(14, 14, 13);
+    background-color: antiquewhite;
+    opacity: 0.8;
+}

@@ -1,0 +1,25 @@
+.form{
+    height: 550px;
+    // background-color: rgb(242, 244, 245);
+    border: 3px solid rgb(8, 8, 1);
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    position:relative;
+    top: 20px;
+    padding-top: 25px;
+    // opacity: 0.4;
+   
+}
+.hint{
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+}
+.back{
+    height:600px;
+    width:1320px;
+    position:relative;
+    margin: auto;
+    background-image:url("https://cdn.pixabay.com/photo/2018/06/14/21/15/bedroom-3475656_1280.jpg");
+}
+
