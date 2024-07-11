@@ -1,0 +1,53 @@
+<!-- <form [formGroup]="loginForm">
+<mat-form-field>
+  <mat-label>Name</mat-label>
+  <input type="text" matInput formControlName="Name">
+
+                <mat-hint class="hint" *ngIf="!loginForm.get('Name')?.touched"> Please enter name
+                    here</mat-hint>
+                <mat-error
+                    *ngIf="loginForm.get('Name')?.errors?.['required'] && loginForm.get('Name')?.touched">Full
+                    Name is required</mat-error>
+            </mat-form-field>
+<br><br>
+<mat-form-field>
+  <mat-label>Salary</mat-label>
+  <input type="text" matInput formControlName="Salary">
+  <mat-hint class="hint" *ngIf="!loginForm.get('Salary')?.touched"> Please enter Salary
+    here</mat-hint>
+    <mat-error
+    *ngIf="loginForm.get('Salary')?.errors?.['required'] && loginForm.get('Salary')?.touched">Salary is required</mat-error>
+</mat-form-field>
+<br><br>
+<mat-form-field>
+  <mat-label>Age</mat-label>
+  <input type="text" matInput formControlName="Age">
+  <mat-hint class="hint" *ngIf="!loginForm.get('Age')?.touched"> Please enter Age
+    here</mat-hint>
+    <mat-error
+    *ngIf="loginForm.get('Age')?.errors?.['required'] && loginForm.get('Age')?.touched">Age is required</mat-error>
+</mat-form-field>
+<br><br>
+<button mat-raised-button color="accent" class="btn" (click)="submit()" *ngIf="!dataById">Submit</button>
+<button mat-raised-button color="accent" class="btn" (click)="update()" *ngIf="dataById">Update</button> -->
+ <!-- <div *ngFor="let data of Data"> -->
+  <tr> 
+    <th> 
+       id
+    </th> 
+    <th> 
+        Name
+    </th> 
+    <th> 
+      Salary
+    </th> 
+    <th> 
+      Age
+    </th> 
+</tr> 
+<tr> 
+  <th *ngFor="let item of Data|keyvalue"> 
+    {{item.value|json}}
+  </th> 
+</tr> 
+ <!-- </div> -->
